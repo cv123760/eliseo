@@ -1,0 +1,50 @@
+body{
+    margin: 0 auto;
+}
+
+main{
+    background-image: url(images/BG.jpg);
+    background-size: cover;
+    height: 800px;
+    background-position: right;
+    width: 100%;
+
+}
+
+.containerMain{
+    background-color: #8c8c8c5E;
+    height: 800px;
+}
+
+nav{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.links{
+    margin:0 auto;
+}
+
+.socialMedia{
+    position: absolute;
+    right: 20px;
+}
+
+nav img{
+    height: 21px;
+}
+
+a{
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    margin:200px auto;
+    width: fit-content;
+}
+
