@@ -40,7 +40,18 @@ nav img{
 a{
     margin: 1rem;
     color: white;
+
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;;
     text-decoration: none;
+}
+
+p{
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;;
+    text-align: center;
 }
 
 .logo{
@@ -48,3 +59,18 @@ a{
     width: fit-content;
 }
 
+.intro div{
+    max-width: 905px;
+    margin:0 auto;
+    font-size: 1.5rem;
+}
+
+.video{
+    width: fit-content;
+    margin:0 auto;
+
+}
+
+h1{
+    text-align: center;
+}
