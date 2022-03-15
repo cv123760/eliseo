@@ -8,7 +8,7 @@ main{
     height: 800px;
     background-position: right;
     width: 100%;
-
+    margin: 0;
 }
 
 .containerMain{
@@ -59,18 +59,43 @@ p{
     width: fit-content;
 }
 
-.intro div{
-    max-width: 905px;
+.intro{
+    padding-top: 80px;
+    padding-bottom: 30%;
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+
+}
+
+.paragraph{
     margin:0 auto;
     font-size: 1.5rem;
-}
-
-.video{
-    width: fit-content;
-    margin:0 auto;
+    max-width: 1044px; /* 1024px + 20px (padding left and right) */
+    padding: 10px;
 
 }
+
+.videoWraper{
+    top: 100px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
 
 h1{
+    font-family: myriad-pro, sans-serif;
+    margin:37px;
     text-align: center;
+    font-size: 3.25rem;
 }
