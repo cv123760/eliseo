@@ -133,7 +133,28 @@ h2{
     justify-content: space-between;
 }
 
-.graySection{
-    background-color: ;
+
+
+.App{
+    background-color: #6F6F6F;
+    color: white;
+}
+
+input{
+    display: block;
+    padding-top: 1rem;
+    width: 193px;
+}
+
+form{
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.message{
+    width: 586px;
+    height: 195px;
+    padding:0;
+    display: flex;
 }
 
