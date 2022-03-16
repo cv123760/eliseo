@@ -1,3 +1,4 @@
+/* tags  */
 body{
     margin: 0 auto;
 }
@@ -5,15 +6,10 @@ body{
 main{
     background-image: url(images/BG.jpg);
     background-size: cover;
-    height: 800px;
+    height: 100vh;
     background-position: right;
     width: 100%;
     margin: 0;
-}
-
-.containerMain{
-    background-color: #8c8c8c5E;
-    height: 800px;
 }
 
 nav{
@@ -24,64 +20,8 @@ nav{
     text-align: center;
 }
 
-.links{
-    margin:0 auto;
-}
-
-.socialMedia{
-    position: absolute;
-    right: 20px;
-}
-
-nav img{
+nav img, footer img{
     height: 21px;
-}
-
-a{
-    margin: 1rem;
-    color: white;
-
-    font-family: myriad-pro, sans-serif;
-    font-style: normal;
-    font-weight: 300;;
-    text-decoration: none;
-}
-
-p{
-    font-family: myriad-pro, sans-serif;
-    font-style: normal;
-    font-weight: 300;;
-    text-align: center;
-}
-
-.logo{
-    margin:200px auto;
-    width: fit-content;
-}
-
-.intro{
-    padding-top: 80px;
-    padding-bottom: 30%;
-    background-image: url(images/bg2.jpg);
-    background-size: cover;
-    background-position-y: bottom;
-}
-
-.paragraph{
-    margin:0 auto;
-    font-size: 1.5rem;
-    max-width: 1044px; /* 1024px + 20px (padding left and right) */
-    padding: 10px;
-
-}
-
-.videoWraper{
-    top: 100px;
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1024px;
 }
 
 iframe{
@@ -102,29 +42,152 @@ h1{
 h2{
     margin: 0;
     text-align: center;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 300;
+    font-size: .8125rem;
+
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+a{
+    margin: 1rem;
+    color: white;
+
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;;
+    text-decoration: none;
+}
+
+p{
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;;
+    text-align: center;
+}
+
+input{
+    display: block;
+    padding-top: 1rem;
+    width: 193px;
+    height: 24px;
+    margin-top: 16px;
+}
+
+form{
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+footer{
+    height: 136px;
+    background-color: #595959;
+    padding:5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    height: fit-content;
+    margin-top: 115px;
+}
+
+
+/* classes */
+
+.containerMain{
+    background-color: #8c8c8c5E;
+    height: 100%;
+}
+
+.links{
+    margin:0 auto;
+}
+
+.socialMedia{
+    position: absolute;
+    right: 20px;
+}
+
+.logo{
+    margin:200px auto;
+    width: fit-content;
+}
+
+.intro{
+    padding-top: 80px;
+    padding-bottom: 30%;
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.paragraph{
+    margin:0 auto;
+    font-size: 1.5rem;
+    max-width: 905px; /* 1024px + 20px (padding left and right) */
+    padding: 30px 130px;
+}
+
+.videoWraper{
+    top: 100px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1024px;
+    max-height: 576px;
+    
 }
 
 .blueSection{
     background-color: #2D71F1;
     height: 700px;
     color: white;
-    padding-top: 80px;
+    padding: 80px 130px 0 130px;
 }
 
-.blueSection p{
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.clientReview{
+    max-width: 462px;
+    padding-top: 100PX;
+
+    border-bottom: 1px solid white;
+    height: 260px;
+}
+
+.clientReview p{
     text-align: left;
     font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
-.review{
-    max-width: 461px;
-    margin: 50px 10px;
+.name p{
+    font-family: myriad-pro, sans-serif;
+    font-size: 13px;
+    text-align: left;
 }
 
-.review div{
-    border-bottom: 1px solid white;
-    min-height: 200px;
+.location{
+        font-family: myriad-pro, sans-serif;
+        font-size: 13px;
+        text-align: left;
+        color: #CDDAFA;
+        font-weight: 200;
 }
+
+
 
 .flexDiv{
     max-width: 1024px;
@@ -138,17 +201,7 @@ h2{
 .App{
     background-color: #6F6F6F;
     color: white;
-}
-
-input{
-    display: block;
-    padding-top: 1rem;
-    width: 193px;
-}
-
-form{
-    max-width: fit-content;
-    margin: 0 auto;
+    padding: 30px 10px
 }
 
 .message{
@@ -158,3 +211,51 @@ form{
     display: flex;
 }
 
+.logoSmall{
+    height: 77px;
+    margin-top: 64px;
+}
+
+
+/* larger screens  */
+@media(min-width:1024px){
+    /* tags */
+    .intro{
+        padding-top: 80px;
+        padding-bottom: 200px;
+        background-image: url(images/bg2.jpg);
+        background-size: cover;
+        background-position-y: bottom;
+    }
+
+
+    /* class */
+    .videoWraper{
+        padding-bottom: 500px; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+
+    }
+
+}
+
+
+@media(max-width: 700px){
+    a{
+        display: block;
+    }
+}
+
+
+
+@media(max-width: 603px){
+    /* tags  */
+    form{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+
+    /* class */
+    .message{
+        width: 100%
+    }
+}

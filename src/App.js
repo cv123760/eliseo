@@ -3,7 +3,7 @@ function App() {
   return (
     <div className="App">
 
-      <h2>CONTACT US</h2>
+      <h3>CONTACT US</h3>
 
       <form>
 
@@ -12,8 +12,7 @@ function App() {
         <input className="message" name="message" placeholder="MESSAGE" type="text" /> 
         
       </form>
-
-
+      
     </div>
   );
 }
