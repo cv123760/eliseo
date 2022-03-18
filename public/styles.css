@@ -84,6 +84,14 @@ form{
     margin: 0 auto;
 }
 
+button{
+    background-color: #29A6DE;
+    border: none;
+    margin-top:20px; 
+    padding: 1rem 2.5rem;
+    color: white;
+}
+
 footer{
     height: 136px;
     background-color: #595959;
@@ -96,6 +104,8 @@ footer div{
     height: fit-content;
     margin-top: 115px;
 }
+
+
 
 
 /* classes */
@@ -115,8 +125,13 @@ footer div{
 }
 
 .logo{
-    margin:200px auto;
+    padding-top: 25vh;
+    margin: 0 auto;
     width: fit-content;
+}
+
+.logo img{
+    height: 35vh;
 }
 
 .intro{
@@ -240,8 +255,22 @@ footer div{
 
 @media(max-width: 700px){
     a{
-        display: block;
+        display: none;
     }
+
+    .paragraph{
+        padding: 0 20px
+    }
+
+    .blueSection{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .reviews{
+        display: block
+    }
+;
 }
 
 

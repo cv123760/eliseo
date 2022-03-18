@@ -84,6 +84,14 @@ form{
     margin: 0 auto;
 }
 
+button{
+    background-color: #29A6DE;
+    border: none;
+    margin-top:20px; 
+    padding: 1rem 2.5rem;
+    color: white;
+}
+
 footer{
     height: 136px;
     background-color: #595959;
@@ -96,6 +104,8 @@ footer div{
     height: fit-content;
     margin-top: 115px;
 }
+
+
 
 
 /* classes */
