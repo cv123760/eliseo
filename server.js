@@ -39,14 +39,14 @@ app.post("/new-lead", (req, res) => {
         secure: true, // true for 465, false for other ports
         auth: {
             user: process.env.USER, // generated ethereal user
-            pass: "THds47uoXRNBQ", // generated ethereal password
+            pass: process.env.PASS, // generated ethereal password
         },
         });
     
         // send mail with defined transport object
         let info = await transporter.sendMail({
         from: name+ "<test@godoyexd.com>", // sender address
-        to: "cv123760@gmail.com", // list of receivers
+        to: "contact@godoyexd.com, test@godoyexd.com", // list of receivers
         subject: "New Contact request", // Subject line
         text: "Hello world?", // plain text body
         html: "<p><em>name: </em>"+name+"</p><p><em>email: </em>"+email+"</p><p><em>message: </em>"+message+"</p> ", // html body

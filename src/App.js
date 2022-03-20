@@ -114,7 +114,7 @@ function App() {
                 >CONTACT</a>
 
 
-                <a target="_blank" href="https://www.facebook.com/Godoy-Exterior-Design-104660158839824">
+                <a target="_blank" href="https://www.instagram.com/godoyexd/?utm_medium=copy_link">
                   <img src="images/logo-ins.svg" alt="Instagram" />
                 </a>
 
