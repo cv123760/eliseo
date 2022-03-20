@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express")
 const axios = require('axios').default;
 const cors = require("cors")
@@ -37,7 +38,7 @@ app.post("/new-lead", (req, res) => {
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: "test@godoyexd.com", // generated ethereal user
+            user: process.env.USER, // generated ethereal user
             pass: "THds47uoXRNBQ", // generated ethereal password
         },
         });

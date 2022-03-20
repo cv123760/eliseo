@@ -30,8 +30,14 @@ function App() {
 
   const [visibility, setVisible] = useState(false)
 
-  const toggleVisible = ()=>{
-    setVisible(prev=>!prev)
+  const toggleVisible = () => {
+    setVisible(prev => !prev)
+  }
+
+  const scroll = event => {
+    const element = document.getElementById(event.target.innerHTML)
+    console.log(element)
+    element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   }
 
   return (
@@ -40,9 +46,28 @@ function App() {
         <div className="containerMain">
           <nav>
             <div className="links">
-              <a href="#">PROJECTS</a>
-              <a href="#">ABOUT US</a>
-              <a href="#">CONTACT</a>
+
+              <a onClick={event => {
+                event.preventDefault()
+                scroll(event)
+              }}
+                href="#"
+              >PROJECTS</a>
+
+              <a onClick={event => {
+                event.preventDefault()
+                scroll(event)
+              }}
+                href="#"
+              >ABOUT US</a>
+
+              <a onClick={event => {
+                event.preventDefault()
+                scroll(event)
+              }}
+                href="#"
+              >CONTACT</a>
+
             </div>
 
             <div className="socialMedia">
@@ -57,18 +82,36 @@ function App() {
               </a>
             </div>
 
-            <div 
+            <div
               className="burgerMenu"
               onClick={toggleVisible}
-              >
+            >
 
               <img src="images/burger-menu.svg" alt="" />
-              <div className="bmenu" style={{display:visibility?"block":"none"}}>
-                <a className="navLinks" href="#">PROJECTS</a>
+              <div className="bmenu" style={{ display: visibility ? "block" : "none" }}>
+                <a onClick={event => {
+                  event.preventDefault()
+                  scroll(event)
+                }}
+                  className="navLinks"
+                  href="#"
+                >PROJECTS</a>
 
-                <a className="navLinks" href="#">ABOUT US</a>
+                <a onClick={event => {
+                  event.preventDefault()
+                  scroll(event)
+                }}
+                  className="navLinks"
+                  href="#"
+                >ABOUT US</a>
 
-                <a className="navLinks" href="#">CONTACT</a>
+                <a onClick={event => {
+                  event.preventDefault()
+                  scroll(event)
+                }}
+                  className="navLinks"
+                  href="#"
+                >CONTACT</a>
 
 
                 <a target="_blank" href="https://www.facebook.com/Godoy-Exterior-Design-104660158839824">
@@ -94,11 +137,11 @@ function App() {
         </div>
       </main>
 
-      <div className="intro">
+      <div className="intro" id="ABOUT US" >
 
         <h1>Your Home is Your Pride and Joy</h1>
 
-        <div className="paragraph">
+        <div className="paragraph" >
 
           <p>With over 25 years industry experience, Godoy Exterior Design will make your vision a reality. We will empower
             you to create the exterior for your home you have always desired. Let our experienced team bring new life to it
@@ -106,12 +149,12 @@ function App() {
           </p>
 
           <p>We are your exterior finish specialists. Contact us today for a free consultation.</p>
-        
+
         </div>
 
         <div className="videoWraper">
 
-          <iframe src="https://www.youtube.com/embed/MgZ1MheFBuI" title="YouTube video player" frameborder="0"
+          <iframe id="PROJECTS" src="https://www.youtube.com/embed/MgZ1MheFBuI" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
@@ -159,7 +202,7 @@ function App() {
 
       </div>
 
-      <div className="App">
+      <div className="App" id="CONTACT">
         <h3>CONTACT US</h3>
 
         <form>
