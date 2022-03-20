@@ -19,6 +19,7 @@ app.use(express.static(__dirname+"/public_html"))
 
 
 app.get("/", (req, res) => {
+
     res.sendFile(__dirname+"/public_html/index.html")
 })
 
@@ -26,6 +27,8 @@ app.post("/new-lead", (req, res) => {
     const name = req.body.name
     const email = req.body.email
     const message = req.body.message
+
+
 
 
 
@@ -38,7 +41,7 @@ app.post("/new-lead", (req, res) => {
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: process.env.USER, // generated ethereal user
+            user: process.env.USER_NAME, // generated ethereal user
             pass: process.env.PASS, // generated ethereal password
         },
         });
