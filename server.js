@@ -48,8 +48,8 @@ app.post("/new-lead", (req, res) => {
     
         // send mail with defined transport object
         let info = await transporter.sendMail({
-        from: name+ "<test@godoyexd.com>", // sender address
-        to: "contact@godoyexd.com, test@godoyexd.com", // list of receivers
+        from: name+ process.env.USER_NAME, // sender address
+        to: process.env.CONTACT, // list of receivers
         subject: "New Contact request", // Subject line
         text: "Hello world?", // plain text body
         html: "<p><em>name: </em>"+name+"</p><p><em>email: </em>"+email+"</p><p><em>message: </em>"+message+"</p> ", // html body

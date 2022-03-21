@@ -184,6 +184,7 @@ footer div{
     margin: 0 auto;
     max-width: 1024px;
     max-height: 576px;
+
     
 }
 
@@ -296,6 +297,12 @@ footer div{
 
 
     /* class */
+    .intro p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
     .socialMedia{
         display: none;
     }

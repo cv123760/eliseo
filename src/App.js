@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios"
 
+// to do 
+// - uncomment projects link 
+// - uncomment video section
+// - add projects video link 
+// - uncomment whatsapp link
+// - add whatsapp link 
+
+
 function App() {
 
   const [email, setEmail] = useState({
@@ -47,12 +55,12 @@ function App() {
           <nav>
             <div className="links">
 
-              <a onClick={event => {
+              {/* <a onClick={event => {
                 event.preventDefault()
                 scroll(event)
               }}
                 href="#"
-              >PROJECTS</a>
+              >PROJECTS</a> */}
 
               <a onClick={event => {
                 event.preventDefault()
@@ -71,15 +79,19 @@ function App() {
             </div>
 
             <div className="socialMedia">
+
               <a target="_blank" href="https://www.instagram.com/godoyexd/?utm_medium=copy_link">
                 <img src="images/logo-ins.svg" alt="Instagram" />
               </a>
+
               <a target="_blank" href="https://www.facebook.com/Godoy-Exterior-Design-104660158839824">
                 <img src="images/logo-fac.svg" alt="Facebook" />
               </a>
-              <a target="_blank" href="#">
+
+              {/* <a target="_blank" href="#">
                 <img src="images/logo-wha.svg" alt="WhatsApp" />
-              </a>
+              </a> */}
+
             </div>
 
             <div
@@ -89,13 +101,13 @@ function App() {
 
               <img src="images/burger-menu.svg" alt="" />
               <div className="bmenu" style={{ display: visibility ? "block" : "none" }}>
-                <a onClick={event => {
+                {/* <a onClick={event => {
                   event.preventDefault()
                   scroll(event)
                 }}
                   className="navLinks"
                   href="#"
-                >PROJECTS</a>
+                >PROJECTS</a> */}
 
                 <a onClick={event => {
                   event.preventDefault()
@@ -152,13 +164,13 @@ function App() {
 
         </div>
 
-        <div className="videoWraper">
+        {/* <div className="videoWraper">
 
           <iframe id="PROJECTS" src="https://www.youtube.com/embed/MgZ1MheFBuI" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
-        </div>
+        </div> */}
 
       </div>
 
